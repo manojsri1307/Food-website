@@ -1,0 +1,137 @@
+
+/* recipies html top our recipies styles */
+
+.recepies-top-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.recepies-top-container::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.4;
+}
+
+.recepies-top-container img {
+    width: 100%;
+}
+
+.recepies-top-container .recepies-navbar {
+    z-index: 5;
+}
+
+.recepies-top-container .recepies-navbar .recipies-nav-links {
+    display: flex;
+    column-gap: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.recepies-top-container .recepies-navbar .recipies-nav-links li a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.recepies-top-container .recepies-navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.recepies-top-container .recepies-top-content {
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.recipies-mobile-nav {
+    width: 100%;
+    min-height: 40px;
+    background: #ff5500;
+    padding: 10px;
+}
+
+.recipies-mobile-nav .recipies-mobile-nav-menu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipies-mobile-nav .recipies-mobile-nav-menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+    .recepies-top-container .recepies-navbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .recepies-top-container .recepies-top-content {
+        font-size: 42px;
+    }
+    .recipies-mobile-nav {
+        display: none;
+    }
+}
+
+
+/* recipies-body-section */
+
+.recipies-body-section {
+    width: 100%;
+    height: 100%;
+}
+
+.recipies-body-section .food-section .food-section-heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.food-section-heading h2 {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+}
+
+@media screen and (min-width: 992px) {
+    .food-section-heading h2 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+    .underline {
+        width: 100px;
+    }
+}

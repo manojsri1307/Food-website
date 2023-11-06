@@ -1,0 +1,99 @@
+
+/* footer styles */
+.footer-section {
+    width: 100%;
+    min-height: 100px;
+    position: relative;
+    bottom: 0;
+    background: hsl(0, 0%, 0%);
+}
+
+.footer-section .footer-container-main {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.footer-section .footer-heading p,ul li{
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    max-width: 300px;
+}
+
+.footer-section .footer-heading h3, .footer-contact-us {
+    color: #ff5500;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.footer-section-bottom {
+    width: 100%;
+    position: relative;
+    padding: 40px;
+}
+
+.footer-section-bottom .footer-icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.footer-section-bottom .footer-icons .footer-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FF9500;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.02s ;
+}
+
+.footer-section-bottom .footer-icons .footer-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-section-bottom .footer-icons .footer-icon:hover {
+    transform: translateY(-3px);
+}
+
+.footer-text {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.hr-line {
+    position: absolute;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media screen and (max-width: 991px) {
+    .footer-section .footer-section-top {
+        display: none;
+    }
+    .hr-line {
+        display: none;
+    }
+}
